@@ -3,7 +3,7 @@
 <html lang="kk">
 <head>
   <meta charset="UTF-8">
-  <title>Нашақорлықтың алдын алу сауалнамасы</title>
+  <title>senym.kz — Нашақорлықтың алдын алу</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -12,6 +12,14 @@
       font-family: 'Inter', sans-serif;
       background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
       min-height: 100vh;
+      margin: 0;
+    }
+    .animate-fadeIn {
+      animation: fadeIn 0.5s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 <script type="importmap">
@@ -27,5 +35,7 @@
 </head>
 <body>
   <div id="root"></div>
+  <!-- Негізгі скрипт қосылды -->
+  <script type="module" src="./index.tsx"></script>
 </body>
 </html>
